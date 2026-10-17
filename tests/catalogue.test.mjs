@@ -20,11 +20,11 @@ test('source product sizes, cuts and carton quantities are preserved',()=>{
  const loaf=bySlug['cooked-sliced-beef-donair-loaf'].images;
  assert.equal(loaf.length,2);assert.match(loaf[0].local,/aladdin-sliced-beef-loaf/);assert.match(loaf[1].local,/loaf-back/);
 });
-test('review form cannot send enquiries to WordPress or another endpoint',()=>{
+test('form uses only the verified Aladdin endpoint and remains safe without JavaScript',()=>{
  const form=readFileSync(new URL('../src/components/Enquiry.astro',import.meta.url),'utf8');
- assert.match(form,/preventDefault/);assert.match(form,/No enquiry has been sent/);
- assert.doesNotMatch(form,/fetch\(|XMLHttpRequest|localStorage|admin-ajax|onbooking/i);
+ assert.match(form,/preventDefault/);assert.match(form,/sendEnquiry/);
+ assert.doesNotMatch(form,/XMLHttpRequest|localStorage|admin-ajax|Preview error state/i);
  assert.match(form,/<fieldset id="enquiry-fields" disabled>/,'No-JavaScript preview cannot submit');
  assert.match(form,/<form[^>]+method="post"/,'Native fallback cannot encode personal data in the URL');
- const config=readFileSync(new URL('../src/data/site.ts',import.meta.url),'utf8');assert.match(config,/endpoint: null/);
+ const config=readFileSync(new URL('../src/data/site.ts',import.meta.url),'utf8');assert.match(config,/https:\/\/api.onbooking.ca\/v1\/submissions\/62656a87-eac7-4a49-b6fc-8f41630c7fd6/);
 });

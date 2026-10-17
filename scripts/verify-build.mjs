@@ -2,15 +2,17 @@ import {readFile,readdir,stat,access} from 'node:fs/promises';
 import {join,resolve,relative} from 'node:path';
 import assert from 'node:assert/strict';
 const root=resolve('dist');
+const production=process.env.PUBLIC_SITE_MODE==='production';
 const products=JSON.parse(await readFile('src/data/products.json','utf8'));
 async function walk(dir){let files=[];for(const name of await readdir(dir)){const p=join(dir,name);if((await stat(p)).isDirectory())files.push(...await walk(p));else files.push(p);}return files;}
 const files=await walk(root), htmlFiles=files.filter(f=>f.endsWith('.html'));
 assert.equal(htmlFiles.length,10,'Home, catalogue, seven products and 404');
 for(const file of htmlFiles){
- const html=await readFile(file,'utf8');assert.match(html,/noindex,nofollow/);assert.match(html,/mailto:Admin@aladdindonair.Com/);assert.match(html,/https:\/\/theorderguys.com\//);
+ const html=await readFile(file,'utf8');assert.ok(html.includes(`content="${production?'index,follow':'noindex,nofollow'}"`));assert.match(html,/mailto:Admin@aladdindonair.Com/);assert.match(html,/https:\/\/theorderguys.com\//);
  assert.doesNotMatch(html,/[A-Z]:[\\/]/,'No Windows paths');
  assert.doesNotMatch(html.replace(/<link rel="canonical"[^>]*>/g,''),/(?:src|href)=["']https:\/\/aladdindonair.com\/(?:wp-content|wp-admin|products|chicken|burgers)/,'No runtime or navigation dependency on WordPress');
- assert.doesNotMatch(html,/\[email.?protected\]|cdn-cgi|onbooking|iorders|orderance/i);
+ assert.doesNotMatch(html,/\[email.?protected\]|cdn-cgi|iorders|orderance/i);
+ assert.ok(html.includes('<!--email_off-->'),'Business mail link must work without a Cloudflare decoder');
  for(const match of html.matchAll(/(?:src|href)=["']([^"']+)["']/g)){
   const url=match[1];if(!url.startsWith('/')||url.startsWith('//'))continue;
   const path=url.split(/[?#]/)[0];if(!path)continue;
@@ -23,4 +25,11 @@ for(const file of htmlFiles){
 for(const p of products){const html=await readFile(join(root,p.slug,'index.html'),'utf8');assert.match(html,/tel:\+17804580201/);for(const i of p.images)assert.ok(html.includes(i.local));for(const paragraph of p.paragraphs)assert.ok(html.includes(paragraph.replaceAll('&','&amp;')),`${p.slug}: missing source copy`);}
 for(const file of files.filter(f=>f.endsWith('.css'))){const css=await readFile(file,'utf8');assert.doesNotMatch(css,/https?:\/\/(?:aladdindonair|fonts.googleapis|fonts.gstatic)/);}
 assert.ok(files.some(f=>f.endsWith('.woff2')),'Fonts bundled locally');
-console.log(`Verified ${htmlFiles.length} static HTML pages, all local links/assets, exact filename case, original product copy, review noindex and local fonts.`);
+const home=await readFile(join(root,'index.html'),'utf8');
+assert.ok(home.includes('data-endpoint="https://api.onbooking.ca/v1/submissions/62656a87-eac7-4a49-b6fc-8f41630c7fd6"'));
+assert.doesNotMatch(home,/Local preview only|Preview error state/);
+const robots=await readFile(join(root,'robots.txt'),'utf8');
+assert.ok(robots.includes(production?'Allow: /':'Disallow: /'));
+const sitemap=await readFile(join(root,'sitemap.xml'),'utf8');
+assert.equal([...sitemap.matchAll(/<url>/g)].length,9);
+console.log(`Verified ${htmlFiles.length} static HTML pages, local assets, filename case, source copy, live form endpoint, ${production?'production indexing':'review noindex'} and local fonts.`);

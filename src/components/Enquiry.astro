@@ -1,35 +1,84 @@
 ---
-import { enquiryConfig } from '../data/site';
+import { enquiryConfig, business } from '../data/site';
+import EmailLink from './EmailLink.astro';
 ---
-<section class="section enquiry-section" aria-labelledby="inquiry-title"><div class="enquiry-box"><h2 id="inquiry-title">General Inquiry</h2><p>Let us know how we can help you!</p><p class="preview-note">Local preview only. No enquiry will be sent.</p>
-<form id="enquiry-form" method="post" data-mode={enquiryConfig.mode}>
- <fieldset id="enquiry-fields" disabled>
- <label for="name">Name <span aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" required placeholder="Name"/>
- <div class="form-row"><div><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required placeholder="Email"/></div><div><label for="tel">Tel <span aria-hidden="true">*</span></label><input id="tel" name="tel" type="tel" autocomplete="tel" required placeholder="Tel"/></div></div>
- <label for="message">Message <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="5" required placeholder="Message"></textarea>
- <div class="form-actions"><button class="button" type="submit" disabled>Send</button><button class="preview-error" id="preview-error" type="button" disabled>Preview error state</button></div>
- </fieldset>
- <p id="form-status" role="status" aria-live="polite" tabindex="-1"></p>
-</form><noscript><p>This local form preview needs JavaScript. No enquiry has been sent.</p></noscript></div></section>
+<section class="section enquiry-section" aria-labelledby="inquiry-title">
+ <div class="enquiry-box">
+  <h2 id="inquiry-title">General Inquiry</h2>
+  <p>Let us know how we can help you!</p>
+  <form id="enquiry-form" method="post" data-endpoint={enquiryConfig.endpoint}>
+   <fieldset id="enquiry-fields" disabled>
+    <label for="name">Name <span aria-hidden="true">*</span></label>
+    <input id="name" name="name" autocomplete="name" required placeholder="Name" maxlength="200"/>
+    <div class="form-row">
+     <div><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required placeholder="Email" maxlength="254"/></div>
+     <div><label for="tel">Tel <span aria-hidden="true">*</span></label><input id="tel" name="tel" type="tel" autocomplete="tel" required placeholder="Tel" maxlength="60"/></div>
+    </div>
+    <label for="message">Message <span aria-hidden="true">*</span></label>
+    <textarea id="message" name="message" rows="5" required placeholder="Message" maxlength="10000"></textarea>
+    <div class="form-actions"><button class="button" type="submit" disabled>Send</button></div>
+   </fieldset>
+   <p id="form-status" role="status" aria-live="polite" tabindex="-1"></p>
+  </form>
+  <noscript><p>Please enable JavaScript to send an enquiry, or call <a href={business.officeLink}>{business.office}</a> or <EmailLink label="email us"/>.</p></noscript>
+ </div>
+</section>
 <script>
-const form=document.querySelector<HTMLFormElement>('#enquiry-form');
-const status=document.querySelector<HTMLElement>('#form-status');
-const errorButton=document.querySelector<HTMLButtonElement>('#preview-error');
-const submitButton=form?.querySelector<HTMLButtonElement>('[type=submit]');
-let pending=false;
-async function preview(error=false){
- if(!form||!status||!submitButton||pending||!form.reportValidity())return;
- pending=true;submitButton.disabled=true;if(errorButton)errorButton.disabled=true;
- form.setAttribute('aria-busy','true');submitButton.textContent='Previewing…';status.textContent='Checking your enquiry preview…';
- await new Promise(resolve=>setTimeout(resolve,650));
- status.textContent=error?'Local preview error. No enquiry has been sent. Your information has been kept so you can try again.':'Local preview only. No enquiry has been sent.';
- status.className=error?'form-error':'form-success';status.focus();
- pending=false;submitButton.disabled=false;if(errorButton)errorButton.disabled=false;
- form.removeAttribute('aria-busy');submitButton.textContent='Send';
+import { buildEnquiryPayload, sendEnquiry } from '../lib/enquiry';
+const form = document.querySelector<HTMLFormElement>('#enquiry-form');
+const status = document.querySelector<HTMLElement>('#form-status');
+const fields = document.querySelector<HTMLFieldSetElement>('#enquiry-fields');
+const button = form?.querySelector<HTMLButtonElement>('[type=submit]');
+const startedAt = Date.now();
+let pending = false;
+let previousFields = '';
+let requestKey = '';
+let previousPayload: ReturnType<typeof buildEnquiryPayload> | null = null;
+
+async function submit() {
+ if (!form || !status || !fields || !button || pending || !form.reportValidity()) return;
+ try {
+  const data = new FormData(form);
+  let payload = buildEnquiryPayload({
+   name: String(data.get('name') ?? ''), email: String(data.get('email') ?? ''),
+   tel: String(data.get('tel') ?? ''), message: String(data.get('message') ?? '')
+  }, window.location.href, Date.now() - startedAt);
+  const serializedFields = JSON.stringify(payload.fields);
+  if (!requestKey || serializedFields !== previousFields) {
+   requestKey = crypto.randomUUID();
+   previousFields = serializedFields;
+   previousPayload = payload;
+  } else if (previousPayload) {
+   payload = previousPayload;
+  }
+  pending = true;
+  fields.disabled = true;
+  form.setAttribute('aria-busy', 'true');
+  button.textContent = 'Sending…';
+  status.className = '';
+  status.textContent = 'Sending your enquiry…';
+  await sendEnquiry(form.dataset.endpoint!, payload, requestKey);
+  status.textContent = 'Thank you. Your enquiry has been received.';
+  status.className = 'form-success';
+  form.reset();
+  requestKey = '';
+  previousFields = '';
+  previousPayload = null;
+ } catch (error) {
+  status.textContent = error instanceof Error && error.name !== 'AbortError' && error.name !== 'TypeError'
+   ? error.message
+   : 'We could not confirm your enquiry was sent. Please try again or call (780) 458-0201.';
+  status.className = 'form-error';
+ } finally {
+  pending = false;
+  fields.disabled = false;
+  form.removeAttribute('aria-busy');
+  button.textContent = 'Send';
+  button.disabled = false;
+  status.focus();
+ }
 }
-form?.addEventListener('submit',e=>{e.preventDefault();void preview();});
-errorButton?.addEventListener('click',()=>void preview(true));
-// Enable the form only after its local-only handlers are registered.
-const fields=document.querySelector<HTMLFieldSetElement>('#enquiry-fields');
-if(form&&fields&&submitButton&&errorButton){fields.disabled=false;submitButton.disabled=false;errorButton.disabled=false;}
+
+form?.addEventListener('submit', event => { event.preventDefault(); void submit(); });
+if (form && fields && button) { fields.disabled = false; button.disabled = false; }
 </script>

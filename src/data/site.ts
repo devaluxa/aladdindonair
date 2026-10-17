@@ -7,5 +7,7 @@ export const business = {
  directions: 'https://www.google.com/maps/dir/?api=1&destination=12555+127+Ave+NW,+Edmonton,+AB+T5L+3E5',
  map: 'https://maps.google.com/maps?q=12555%20127%20Ave%20NW%20Edmonton&t=m&z=15&output=embed'
 };
-// Review-only. A verified Aladdin-specific delivery integration is required before launch.
-export const enquiryConfig = { mode: 'local-preview' as const, endpoint: null };
+export const enquiryConfig = {
+ mode: 'live' as const,
+ endpoint: 'https://api.onbooking.ca/v1/submissions/62656a87-eac7-4a49-b6fc-8f41630c7fd6'
+};

@@ -90,5 +90,20 @@
     "route": "/category/products/",
     "status": "not imported: generated WordPress taxonomy archive, absent from primary/related/footer navigation; product content is preserved on its own pages",
     "template": "WordPress archive"
+  },
+  {
+    "route": "/robots.txt",
+    "status": "generated static production discovery metadata",
+    "template": "static metadata"
+  },
+  {
+    "route": "/sitemap.xml",
+    "status": "generated static production discovery metadata",
+    "template": "static metadata"
+  },
+  {
+    "route": "/sitemap_index.xml",
+    "status": "generated static production discovery metadata",
+    "template": "static metadata"
   }
 ]

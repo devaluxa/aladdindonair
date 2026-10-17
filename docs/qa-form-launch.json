@@ -1,0 +1,8 @@
+{
+  "sameKey": true,
+  "sameBody": true,
+  "endpoint": "https://api.onbooking.ca/v1/submissions/62656a87-eac7-4a49-b6fc-8f41630c7fd6",
+  "errorStatePassed": true,
+  "successMessage": "Thank you. Your enquiry has been received.",
+  "formReset": true
+}

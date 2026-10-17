@@ -9,8 +9,9 @@
   "scripts": {
     "dev": "astro dev --host 127.0.0.1 --port 4350",
     "check": "astro check",
-    "test": "node --test tests/*.test.mjs",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "build": "npm run check && npm test && astro build && node scripts/verify-build.mjs",
+    "build:production": "node scripts/build-production.mjs",
     "preview": "astro preview --host 127.0.0.1 --port 4351",
     "optimize:images": "node scripts/optimize-images.mjs"
   },

@@ -1,0 +1,590 @@
+{
+  "checked": 63,
+  "failures": [],
+  "cloudflareNormalization": "Only email_off comments and the existing Cloudflare JavaScript-detection injection are normalized for public HTML; origin files must match byte for byte.",
+  "homeTitle": "Aladdin Donair Wholesale - Welcome",
+  "robots": "index,follow",
+  "hasCorrectForm": true,
+  "staticMailto": true,
+  "notFound": {
+    "status": 404,
+    "custom": true
+  },
+  "www": {
+    "status": 301,
+    "location": "https://aladdindonair.com/"
+  },
+  "http": {
+    "status": 301,
+    "location": "https://aladdindonair.com/"
+  },
+  "results": [
+    {
+      "route": "/images/aladdin-donair-logo-transparent2.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 31478
+    },
+    {
+      "route": "/images/beef-donair-cons-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 26044
+    },
+    {
+      "route": "/images/aladdin-donair-logo-transparent2-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 41734
+    },
+    {
+      "route": "/images/char-burgers-4-oz-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 27446
+    },
+    {
+      "route": "/images/beef-donair-cons.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 137688
+    },
+    {
+      "route": "/images/cooked-sliced-beef-donair-loaf-back-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 55876
+    },
+    {
+      "route": "/images/char-burgers-4-oz.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 200404
+    },
+    {
+      "route": "/images/cooked-sliced-beef-donair-loaf-back.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 143146
+    },
+    {
+      "route": "/images/aladdin-sliced-beef-loaf-450x450-1.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 59818
+    },
+    {
+      "route": "/images/aladin-donair-icon.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 24922
+    },
+    {
+      "route": "/images/aladin-donair-icon-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 57312
+    },
+    {
+      "route": "/images/cook-sliced-beef-donair.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 59818
+    },
+    {
+      "route": "/images/grilled-beef-donair-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 59804
+    },
+    {
+      "route": "/images/grilled-chicken-donair-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 66278
+    },
+    {
+      "route": "/images/grilled-beef-donair.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 290500
+    },
+    {
+      "route": "/images/beef-donair-cone-12-kg-new.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 61188
+    },
+    {
+      "route": "/images/beef-donair-cone-12-kg-new-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 23362
+    },
+    {
+      "route": "/images/grilled-chicken-donair.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 289622
+    },
+    {
+      "route": "/images/beef-donair-cone-5-kg-new.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 52490
+    },
+    {
+      "route": "/images/beef-donair-cone-5-kg-new-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 19532
+    },
+    {
+      "route": "/images/beef-donair-cone-9-kg-new.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 61188
+    },
+    {
+      "route": "/images/beef-donair-cone-9-kg-new-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 23362
+    },
+    {
+      "route": "/images/burgers-aladdin.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 219908
+    },
+    {
+      "route": "/images/burgers-aladdin-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 33060
+    },
+    {
+      "route": "/images/chicken-aladdin.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 153368
+    },
+    {
+      "route": "/images/chicken-aladdin-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 61310
+    },
+    {
+      "route": "/images/chicken-donair-cone-10-kg-1-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 41520
+    },
+    {
+      "route": "/images/chicken-donair-cone-5-kg-1.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 179416
+    },
+    {
+      "route": "/images/chicken-donair-cone-5-kg-1-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 33200
+    },
+    {
+      "route": "/images/chicken-donair-cone-10-kg-1.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 235254
+    },
+    {
+      "route": "/images/chicken-donair-cone-8-kg-1-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 41520
+    },
+    {
+      "route": "/images/aladdin-chicken-cone-updated.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 69526
+    },
+    {
+      "route": "/images/chicken-donair-cone-8-kg-1.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 235254
+    },
+    {
+      "route": "/_astro/raleway-latin-400-normal.C5eIEfLm.woff2",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 22408
+    },
+    {
+      "route": "/images/building-aladdin-cover-640.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 104580
+    },
+    {
+      "route": "/_astro/raleway-latin-400-normal.sMcq1OIP.woff",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 22460
+    },
+    {
+      "route": "/_astro/raleway-latin-500-normal.D-8sZNrj.woff2",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 22004
+    },
+    {
+      "route": "/images/building-aladdin-cover.webp",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 537776
+    },
+    {
+      "route": "/_astro/raleway-latin-500-normal.tXW-zgej.woff",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 21980
+    },
+    {
+      "route": "/_astro/raleway-latin-600-normal.Dim-CLtL.woff2",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 22816
+    },
+    {
+      "route": "/_astro/raleway-latin-600-normal.BYS3Hyhk.woff",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 22792
+    },
+    {
+      "route": "/_astro/raleway-latin-700-normal.JVwBSLev.woff",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 22800
+    },
+    {
+      "route": "/_astro/raleway-latin-700-normal.BVpQLp0x.woff2",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 22696
+    },
+    {
+      "route": "/_astro/open-sans-latin-600-normal.Cp4N6AwT.woff2",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 18620
+    },
+    {
+      "route": "/_astro/montserrat-latin-300-normal.BgP24wlQ.woff2",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 18708
+    },
+    {
+      "route": "/_astro/montserrat-latin-300-normal.sTRdVzlf.woff",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 20704
+    },
+    {
+      "route": "/_astro/open-sans-latin-600-normal.C3dWW5mx.woff",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 17192
+    },
+    {
+      "route": "/_astro/montserrat-latin-600-normal.UVxSCcoG.woff2",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 18688
+    },
+    {
+      "route": "/_astro/Layout.BvGTFzRz.css",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 12761
+    },
+    {
+      "route": "/_astro/montserrat-latin-600-normal.CdhFl4lI.woff",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 20548
+    },
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 70
+    },
+    {
+      "route": "/404.html",
+      "status": 200,
+      "matches": false,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 3527
+    },
+    {
+      "route": "/products/",
+      "status": 200,
+      "matches": false,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 7394
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 695
+    },
+    {
+      "route": "/sitemap_index.xml",
+      "status": 200,
+      "matches": true,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 187
+    },
+    {
+      "route": "/chicken/",
+      "status": 200,
+      "matches": false,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 4964
+    },
+    {
+      "route": "/burgers/",
+      "status": 200,
+      "matches": false,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 5799
+    },
+    {
+      "route": "/grilled-chicken-donair-shawarma/",
+      "status": 200,
+      "matches": false,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 5428
+    },
+    {
+      "route": "/grilled-beef-donair/",
+      "status": 200,
+      "matches": false,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 5476
+    },
+    {
+      "route": "/cooked-sliced-beef-donair-loaf/",
+      "status": 200,
+      "matches": false,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 6001
+    },
+    {
+      "route": "/beef-donair-cones/",
+      "status": 200,
+      "matches": false,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 7192
+    },
+    {
+      "route": "/chicken-donair-cone-shawarma/",
+      "status": 200,
+      "matches": false,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 6976
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "matches": false,
+      "normalizedMatches": true,
+      "originStatus": 200,
+      "originMatches": true,
+      "bytes": 10338
+    }
+  ]
+}

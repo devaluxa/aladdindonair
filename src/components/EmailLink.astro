@@ -1,0 +1,6 @@
+---
+import { business } from '../data/site';
+interface Props { label?: string }
+const { label=business.email }=Astro.props;
+---
+<Fragment set:html={'<!--email_off-->'}/><a href={`mailto:${business.email}`}>{label}</a><Fragment set:html={'<!--/email_off-->'}/>
