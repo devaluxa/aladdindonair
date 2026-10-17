@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Enquiry from '../components/Enquiry.astro';
+import copy from '../data/home.json';
+import { business as b } from '../data/site';
+---
+<Layout title="Aladdin Donair Wholesale - Welcome" home>
+ <section class="hero"><img class="hero-image" src="/images/building-aladdin-cover.webp" srcset="/images/building-aladdin-cover-640.webp 640w, /images/building-aladdin-cover.webp 1500w" sizes="100vw" width="1500" height="998" alt="Aladdin Donair building in Edmonton" fetchpriority="high" loading="eager"/><div class="hero-shade"></div><div class="hero-title"><h1>Aladdin Donair<br/>Wholesale</h1><span class="hero-rule" aria-hidden="true"></span></div><div class="hero-bottom" aria-hidden="true"></div></section>
+ <section class="section welcome container"><h2>Welcome to Aladdin Donair Wholesale</h2><div class="red-rule"></div>{copy.welcome.map(p=><p>{p}</p>)}</section>
+ <section class="section home-products"><div class="container split"><div class="cone-photo"><img src="/images/aladdin-chicken-cone-updated.webp" width="300" height="563" alt="Aladdin chicken donair cone" loading="lazy"/></div><div><h2>Our products</h2><div class="red-rule"></div>{copy.products.filter(Boolean).map(p=><p>{p}</p>)}<div class="button-row"><a class="button outline" href="/products/">Retail Products</a><a class="button" href="/products/">Whole Sales Products</a></div></div></div></section>
+ <section id="contact" class="contact-section section"><div class="container contact-grid"><div class="contact-panel"><h2>Contact</h2><p><a href={b.directions}>{b.address}</a></p><a class="feedback-link" href="#">Customer Feedback</a><p><strong>{b.contact}</strong><br/>{b.name}<br/>Office: <a href={b.officeLink}>{b.office}</a><br/>Cell: <a href={b.cellLink}>{b.cell}</a> (After Hours)</p><a class="directions-link" href={b.directions}>Get directions <span aria-hidden="true">↗</span></a></div><iframe src={b.map} title="Aladdin Donair Wholesale — 12555 127 Ave NW, Edmonton" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></section>
+ <Enquiry/>
+</Layout>

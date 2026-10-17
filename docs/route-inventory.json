@@ -1,0 +1,94 @@
+[
+  {
+    "route": "/",
+    "source": "https://aladdindonair.com/",
+    "status": "migrated",
+    "template": "home"
+  },
+  {
+    "route": "/products/",
+    "source": "https://aladdindonair.com/products/",
+    "status": "migrated",
+    "template": "catalogue"
+  },
+  {
+    "route": "/chicken/",
+    "source": "https://aladdindonair.com/chicken/",
+    "status": "migrated",
+    "template": "product",
+    "images": [
+      "/images/chicken-aladdin.webp"
+    ]
+  },
+  {
+    "route": "/burgers/",
+    "source": "https://aladdindonair.com/burgers/",
+    "status": "migrated",
+    "template": "product",
+    "images": [
+      "/images/burgers-aladdin.webp",
+      "/images/char-burgers-4-oz.webp"
+    ]
+  },
+  {
+    "route": "/grilled-chicken-donair-shawarma/",
+    "source": "https://aladdindonair.com/grilled-chicken-donair-shawarma/",
+    "status": "migrated",
+    "template": "product",
+    "images": [
+      "/images/grilled-chicken-donair.webp"
+    ]
+  },
+  {
+    "route": "/grilled-beef-donair/",
+    "source": "https://aladdindonair.com/grilled-beef-donair/",
+    "status": "migrated",
+    "template": "product",
+    "images": [
+      "/images/grilled-beef-donair.webp"
+    ]
+  },
+  {
+    "route": "/cooked-sliced-beef-donair-loaf/",
+    "source": "https://aladdindonair.com/cooked-sliced-beef-donair-loaf/",
+    "status": "migrated",
+    "template": "product",
+    "images": [
+      "/images/aladdin-sliced-beef-loaf-450x450-1.webp",
+      "/images/cooked-sliced-beef-donair-loaf-back.webp"
+    ]
+  },
+  {
+    "route": "/beef-donair-cones/",
+    "source": "https://aladdindonair.com/beef-donair-cones/",
+    "status": "migrated",
+    "template": "product",
+    "images": [
+      "/images/beef-donair-cons.webp",
+      "/images/beef-donair-cone-12-kg-new.webp",
+      "/images/beef-donair-cone-5-kg-new.webp",
+      "/images/beef-donair-cone-9-kg-new.webp"
+    ]
+  },
+  {
+    "route": "/chicken-donair-cone-shawarma/",
+    "source": "https://aladdindonair.com/chicken-donair-cone-shawarma/",
+    "status": "migrated",
+    "template": "product",
+    "images": [
+      "/images/chicken-donair-cone-5-kg-1.webp",
+      "/images/chicken-donair-cone-10-kg-1.webp",
+      "/images/chicken-donair-cone-8-kg-1.webp"
+    ]
+  },
+  {
+    "route": "/404.html",
+    "status": "new static error page",
+    "template": "404"
+  },
+  {
+    "route": "/category/products/",
+    "status": "not imported: generated WordPress taxonomy archive, absent from primary/related/footer navigation; product content is preserved on its own pages",
+    "template": "WordPress archive"
+  }
+]

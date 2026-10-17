@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import { products } from '../data/products';
+import copy from '../data/catalogue.json';
+---
+<Layout title="Products - Aladdin Donair Wholesale" description={copy.description}>
+ <section class="section container catalogue"><div class="catalogue-intro"><h1>Our Products</h1><div class="red-rule"></div><p>{copy.description}</p></div><div class="product-grid">{products.slice(0,6).map(p=><ProductCard product={p}/>)}</div><div class="additional-product"><a class="button outline" href="/chicken-donair-cone-shawarma/">Chicken Donair Cone (Shawarma) <span aria-hidden="true">→</span></a></div></section>
+</Layout>

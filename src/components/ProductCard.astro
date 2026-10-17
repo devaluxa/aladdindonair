@@ -1,0 +1,10 @@
+---
+import Photo from './Photo.astro';
+import type { Product } from '../data/products';
+interface Props { product: Product }
+const {product:p}=Astro.props;
+---
+<a class="product-card" href={`/${p.slug}/`}>
+ <div class="card-photo"><Photo {...p.card} src={p.card.local} alt={p.name}/></div>
+ <h2>{p.name}<span aria-hidden="true">↗</span></h2>
+</a>

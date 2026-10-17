@@ -1,0 +1,323 @@
+[
+  {
+    "id": "chicken",
+    "slug": "chicken",
+    "name": "Chicken",
+    "paragraphs": [
+      "Thighs, legs, breasts, and more. Our halal chicken comes in a variety of styles and forms, including skin on and skin off. Whether you’re looking for a whole chicken or specific pieces, we have the chicken your business needs."
+    ],
+    "images": [
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/05/Chicken-ALaddin.jpeg",
+        "alt": "Chicken ALaddin",
+        "local": "/images/chicken-aladdin.webp",
+        "width": 1024,
+        "height": 686,
+        "small": "/images/chicken-aladdin-640.webp"
+      }
+    ],
+    "description": "Thighs, legs, breasts, and more. Our halal chicken comes in a variety of styles and forms, including skin on and skin off. Whether you’re looking for a whole",
+    "source": "https://aladdindonair.com/chicken/",
+    "card": {
+      "source": "https://aladdindonair.com/wp-content/uploads/2021/05/Chicken-ALaddin.jpeg",
+      "alt": "Chicken",
+      "local": "/images/chicken-aladdin.webp",
+      "width": 1024,
+      "height": 686,
+      "small": "/images/chicken-aladdin-640.webp"
+    },
+    "related": [
+      "chicken",
+      "burgers",
+      "grilled-chicken-donair-shawarma",
+      "grilled-beef-donair",
+      "cooked-sliced-beef-donair-loaf",
+      "beef-donair-cones",
+      "chicken-donair-cone-shawarma"
+    ]
+  },
+  {
+    "id": "burgers",
+    "slug": "burgers",
+    "name": "Burgers",
+    "paragraphs": [
+      "Make your burger nights even better with our halal beef burgers: the perfect complement for every family barbeque. Our blend of halal beef and spices combine to make these burgers a flavour-filled experience the whole family will enjoy. Five sizes available: 4 oz, 5 oz, 6 oz, 7 oz, and 8 oz."
+    ],
+    "images": [
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/05/Burgers-Aladdin.jpeg",
+        "alt": "Aladdin beef burger patties",
+        "local": "/images/burgers-aladdin.webp",
+        "width": 1800,
+        "height": 1200,
+        "small": "/images/burgers-aladdin-640.webp"
+      },
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/04/Char-Burgers-4-oz.png",
+        "alt": "Aladdin char beef burger patties — 4 oz packaging photograph",
+        "local": "/images/char-burgers-4-oz.webp",
+        "width": 1800,
+        "height": 900,
+        "small": "/images/char-burgers-4-oz-640.webp"
+      }
+    ],
+    "description": "Make your burger nights even better with our halal beef burgers: the perfect complement for every family barbeque. Our blend of halal beef and spices combine",
+    "source": "https://aladdindonair.com/burgers/",
+    "card": {
+      "source": "https://aladdindonair.com/wp-content/uploads/2021/05/Burgers-Aladdin.jpeg",
+      "alt": "Burgers",
+      "local": "/images/burgers-aladdin.webp",
+      "width": 1800,
+      "height": 1200,
+      "small": "/images/burgers-aladdin-640.webp"
+    },
+    "related": [
+      "chicken",
+      "burgers",
+      "grilled-chicken-donair-shawarma",
+      "grilled-beef-donair",
+      "cooked-sliced-beef-donair-loaf",
+      "beef-donair-cones",
+      "chicken-donair-cone-shawarma"
+    ]
+  },
+  {
+    "id": "grilled-chicken-donair-shawarma",
+    "slug": "grilled-chicken-donair-shawarma",
+    "name": "Grilled Chicken Donair (Shawarma)",
+    "paragraphs": [
+      "Add that delicious, authentic, restaurant-caliber rotisserie shawarma taste in your kitchen. Our grilled chicken donair comes in 500 g resealable zip lock top bags so that you can easily get your shawarma fix from the comfort of your own home. Add our grilled chicken donair (shawarma) to your favourite homemade dishes. Experience the flavour in every bite! Contact us today and ask us about our grilled chicken donair packages."
+    ],
+    "images": [
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/04/grilled-chicken-donair.jpeg",
+        "alt": "grilled chicken donair",
+        "local": "/images/grilled-chicken-donair.webp",
+        "width": 1599,
+        "height": 1600,
+        "small": "/images/grilled-chicken-donair-640.webp"
+      }
+    ],
+    "description": "Add that delicious, authentic, restaurant-caliber rotisserie shawarma taste in your kitchen. Our grilled chicken donair comes in 500 g resealable zip lock top",
+    "source": "https://aladdindonair.com/grilled-chicken-donair-shawarma/",
+    "card": {
+      "source": "https://aladdindonair.com/wp-content/uploads/2021/04/grilled-chicken-donair.jpeg",
+      "alt": "Grilled Chicken Donair (Shawarma)",
+      "local": "/images/grilled-chicken-donair.webp",
+      "width": 1599,
+      "height": 1600,
+      "small": "/images/grilled-chicken-donair-640.webp"
+    },
+    "related": [
+      "chicken",
+      "burgers",
+      "grilled-chicken-donair-shawarma",
+      "grilled-beef-donair",
+      "cooked-sliced-beef-donair-loaf",
+      "beef-donair-cones",
+      "chicken-donair-cone-shawarma"
+    ]
+  },
+  {
+    "id": "grilled-beef-donair",
+    "slug": "grilled-beef-donair",
+    "name": "Grilled Beef Donair",
+    "paragraphs": [
+      "We have found a way to package your favourite beef donair right off of the rotisserie and into 500 g resealable zip-lock top bags. Just heat and eat with our grilled beef donair packages: the fastest and tastiest way for you to get your donair fix at home! Add our grilled beef donair to your homemade pizzas, poutines, and sandwiches. This certified halal beef comes with no added MSG so you can be sure you’re always getting the healthiest and tastiest meat. Experience the flavour in every bite! Contact us today and ask us about our grilled beef donair packages."
+    ],
+    "images": [
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/04/grilled-beef-donair.jpeg",
+        "alt": "grilled beef donair",
+        "local": "/images/grilled-beef-donair.webp",
+        "width": 1599,
+        "height": 1600,
+        "small": "/images/grilled-beef-donair-640.webp"
+      }
+    ],
+    "description": "We have found a way to package your favourite beef donair right off of the rotisserie and into 500 g resealable zip-lock top bags. Just heat and eat with our",
+    "source": "https://aladdindonair.com/grilled-beef-donair/",
+    "card": {
+      "source": "https://aladdindonair.com/wp-content/uploads/2021/04/grilled-beef-donair.jpeg",
+      "alt": "Grilled Beef Donair",
+      "local": "/images/grilled-beef-donair.webp",
+      "width": 1599,
+      "height": 1600,
+      "small": "/images/grilled-beef-donair-640.webp"
+    },
+    "related": [
+      "chicken",
+      "burgers",
+      "grilled-chicken-donair-shawarma",
+      "grilled-beef-donair",
+      "cooked-sliced-beef-donair-loaf",
+      "beef-donair-cones",
+      "chicken-donair-cone-shawarma"
+    ]
+  },
+  {
+    "id": "cooked-sliced-beef-donair-loaf",
+    "slug": "cooked-sliced-beef-donair-loaf",
+    "name": "Cooked Sliced Beef Donair Loaf",
+    "paragraphs": [
+      "Our fully cooked sliced halal beef donair loaves are deliciously authentic, mildly spicy, and full of flavour. Our fully cooked beef donair loaves come in a convenient pack for school cafeterias, retail delis, local restaurants, and the frozen aisle in grocery stores. This convenient 1 kg pack makes transporting the loaves home easy so that you can make the perfect pizzas, poutines, and sandwiches with your family!"
+    ],
+    "images": [
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/04/aladdin-sliced-beef-loaf-450x450-1.png",
+        "alt": "Cooked Sliced Beef Donair Loaf — front packaging",
+        "local": "/images/aladdin-sliced-beef-loaf-450x450-1.webp",
+        "width": 450,
+        "height": 450
+      },
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/04/Cooked-Sliced-Beef-Donair-Loaf-Back.jpg",
+        "alt": "Cooked Sliced Beef Donair Loaf — back packaging",
+        "local": "/images/cooked-sliced-beef-donair-loaf-back.webp",
+        "width": 1000,
+        "height": 1000,
+        "small": "/images/cooked-sliced-beef-donair-loaf-back-640.webp"
+      }
+    ],
+    "description": "Our fully cooked sliced halal beef donair loaves are deliciously authentic, mildly spicy, and full of flavour. Our fully cooked beef donair loaves come in a",
+    "source": "https://aladdindonair.com/cooked-sliced-beef-donair-loaf/",
+    "card": {
+      "source": "https://aladdindonair.com/wp-content/uploads/2021/04/cook-sliced-beef-donair.png",
+      "alt": "Cooked Sliced Beef Donair Loaf",
+      "local": "/images/cook-sliced-beef-donair.webp",
+      "width": 450,
+      "height": 450
+    },
+    "related": [
+      "chicken",
+      "burgers",
+      "grilled-chicken-donair-shawarma",
+      "grilled-beef-donair",
+      "cooked-sliced-beef-donair-loaf",
+      "beef-donair-cones",
+      "chicken-donair-cone-shawarma"
+    ]
+  },
+  {
+    "id": "beef-donair-cones",
+    "slug": "beef-donair-cones",
+    "name": "Beef Donair Cones",
+    "paragraphs": [
+      "Our halal beef donair cones are safely handled and perfectly prepared. With no MSG added, you can be sure you’re getting the best meat in both taste and nutrition. Three sizes available: 5 kg, 9 kg, and 12 kg.",
+      "3 x 5 kg",
+      "2 x 9 kg",
+      "1 x 12 kg",
+      "We deliver to all of Alberta. Please contact us for all ordering or pricing information."
+    ],
+    "images": [
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/04/Beef-Donair-Cons.jpg",
+        "alt": "Beef Donair Cones",
+        "local": "/images/beef-donair-cons.webp",
+        "width": 1800,
+        "height": 1800,
+        "small": "/images/beef-donair-cons-640.webp"
+      },
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/05/Beef-Donair-Cone-12-kg-NEW.png",
+        "alt": "Beef Donair Cones — 12 kg packaging photograph",
+        "local": "/images/beef-donair-cone-12-kg-new.webp",
+        "width": 1000,
+        "height": 500,
+        "small": "/images/beef-donair-cone-12-kg-new-640.webp"
+      },
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/05/Beef-Donair-Cone-5-kg-New.png",
+        "alt": "Beef Donair Cones — 5 kg packaging photograph",
+        "local": "/images/beef-donair-cone-5-kg-new.webp",
+        "width": 1000,
+        "height": 500,
+        "small": "/images/beef-donair-cone-5-kg-new-640.webp"
+      },
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/05/Beef-Donair-Cone-9-kg-New.png",
+        "alt": "Beef Donair Cones — 9 kg packaging photograph",
+        "local": "/images/beef-donair-cone-9-kg-new.webp",
+        "width": 1000,
+        "height": 500,
+        "small": "/images/beef-donair-cone-9-kg-new-640.webp"
+      }
+    ],
+    "description": "Our halal beef donair cones are safely handled and perfectly prepared. With no MSG added, you can be sure you’re getting the best meat in both taste and",
+    "source": "https://aladdindonair.com/beef-donair-cones/",
+    "card": {
+      "source": "https://aladdindonair.com/wp-content/uploads/2021/04/Beef-Donair-Cons.jpg",
+      "alt": "Beef Donair Cones",
+      "local": "/images/beef-donair-cons.webp",
+      "width": 1800,
+      "height": 1800,
+      "small": "/images/beef-donair-cons-640.webp"
+    },
+    "related": [
+      "chicken",
+      "burgers",
+      "grilled-chicken-donair-shawarma",
+      "grilled-beef-donair",
+      "cooked-sliced-beef-donair-loaf",
+      "beef-donair-cones",
+      "chicken-donair-cone-shawarma"
+    ]
+  },
+  {
+    "id": "chicken-donair-cone-shawarma",
+    "slug": "chicken-donair-cone-shawarma",
+    "name": "Chicken Donair Cone (Shawarma)",
+    "paragraphs": [
+      "Our halal chicken shawarma is seasoned to perfection with a combination chicken thighs and breasts. The blend of spices and the distinct flavour of meat make our chicken donair cones some of the best in the market. Three sizes available: 5 kg, 8 kg, and 10 kg.",
+      "3 x 5 kg",
+      "2 x 8 kg",
+      "2 x 10 kg",
+      "We deliver to all of Alberta. Please contact us for all ordering or pricing information."
+    ],
+    "images": [
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/05/Chicken-Donair-Cone-5-kg-1.png",
+        "alt": "Chicken Donair Cone (Shawarma) — 5 kg packaging photograph",
+        "local": "/images/chicken-donair-cone-5-kg-1.webp",
+        "width": 1800,
+        "height": 900,
+        "small": "/images/chicken-donair-cone-5-kg-1-640.webp"
+      },
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/05/Chicken-Donair-Cone-10-kg-1.png",
+        "alt": "Chicken Donair Cone (Shawarma) — 10 kg packaging photograph",
+        "local": "/images/chicken-donair-cone-10-kg-1.webp",
+        "width": 1800,
+        "height": 900,
+        "small": "/images/chicken-donair-cone-10-kg-1-640.webp"
+      },
+      {
+        "source": "https://aladdindonair.com/wp-content/uploads/2021/05/Chicken-Donair-Cone-8-kg-1.png",
+        "alt": "Chicken Donair Cone (Shawarma) — 8 kg packaging photograph",
+        "local": "/images/chicken-donair-cone-8-kg-1.webp",
+        "width": 1800,
+        "height": 900,
+        "small": "/images/chicken-donair-cone-8-kg-1-640.webp"
+      }
+    ],
+    "description": "Our halal chicken shawarma is seasoned to perfection with a combination chicken thighs and breasts. The blend of spices and the distinct flavour of meat make",
+    "source": "https://aladdindonair.com/chicken-donair-cone-shawarma/",
+    "card": {
+      "source": "https://aladdindonair.com/wp-content/uploads/2021/05/Chicken-Donair-Cone-5-kg-1.png",
+      "alt": "Chicken Donair Cone 5 kg (1)",
+      "local": "/images/chicken-donair-cone-5-kg-1.webp",
+      "width": 1800,
+      "height": 900,
+      "small": "/images/chicken-donair-cone-5-kg-1-640.webp"
+    },
+    "related": [
+      "chicken",
+      "burgers",
+      "grilled-chicken-donair-shawarma",
+      "grilled-beef-donair",
+      "cooked-sliced-beef-donair-loaf",
+      "beef-donair-cones",
+      "chicken-donair-cone-shawarma"
+    ]
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "route": "/",
+    "heading": "Aladdin DonairWholesale",
+    "images": [
+      "/images/building-aladdin-cover.webp",
+      "/images/aladdin-chicken-cone-updated.webp"
+    ],
+    "paragraphs": 14
+  },
+  {
+    "route": "/products/",
+    "heading": "Our Products",
+    "images": [
+      "/images/chicken-aladdin.webp",
+      "/images/burgers-aladdin.webp",
+      "/images/grilled-chicken-donair.webp",
+      "/images/grilled-beef-donair.webp",
+      "/images/cook-sliced-beef-donair.webp",
+      "/images/beef-donair-cons.webp"
+    ],
+    "paragraphs": 1
+  },
+  {
+    "route": "/chicken/",
+    "heading": "Chicken",
+    "images": [
+      "/images/chicken-aladdin.webp"
+    ],
+    "paragraphs": 1,
+    "quote": "tel:+17804580201"
+  },
+  {
+    "route": "/burgers/",
+    "heading": "Burgers",
+    "images": [
+      "/images/burgers-aladdin.webp",
+      "/images/char-burgers-4-oz.webp"
+    ],
+    "paragraphs": 1,
+    "quote": "tel:+17804580201"
+  },
+  {
+    "route": "/grilled-chicken-donair-shawarma/",
+    "heading": "Grilled Chicken Donair (Shawarma)",
+    "images": [
+      "/images/grilled-chicken-donair.webp"
+    ],
+    "paragraphs": 1,
+    "quote": "tel:+17804580201"
+  },
+  {
+    "route": "/grilled-beef-donair/",
+    "heading": "Grilled Beef Donair",
+    "images": [
+      "/images/grilled-beef-donair.webp"
+    ],
+    "paragraphs": 1,
+    "quote": "tel:+17804580201"
+  },
+  {
+    "route": "/cooked-sliced-beef-donair-loaf/",
+    "heading": "Cooked Sliced Beef Donair Loaf",
+    "images": [
+      "/images/aladdin-sliced-beef-loaf-450x450-1.webp",
+      "/images/cooked-sliced-beef-donair-loaf-back.webp"
+    ],
+    "paragraphs": 1,
+    "quote": "tel:+17804580201"
+  },
+  {
+    "route": "/beef-donair-cones/",
+    "heading": "Beef Donair Cones",
+    "images": [
+      "/images/beef-donair-cons.webp",
+      "/images/beef-donair-cone-12-kg-new.webp",
+      "/images/beef-donair-cone-5-kg-new.webp",
+      "/images/beef-donair-cone-9-kg-new.webp"
+    ],
+    "paragraphs": 5,
+    "quote": "tel:+17804580201"
+  },
+  {
+    "route": "/chicken-donair-cone-shawarma/",
+    "heading": "Chicken Donair Cone (Shawarma)",
+    "images": [
+      "/images/chicken-donair-cone-5-kg-1.webp",
+      "/images/chicken-donair-cone-10-kg-1.webp",
+      "/images/chicken-donair-cone-8-kg-1.webp"
+    ],
+    "paragraphs": 5,
+    "quote": "tel:+17804580201"
+  }
+]

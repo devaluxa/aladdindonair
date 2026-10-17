@@ -1,0 +1,37 @@
+[
+  {
+    "fonts": "loaded",
+    "footerFont": "Montserrat, sans-serif",
+    "inquiryFont": "\"Open Sans\", sans-serif",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "fonts": "loaded",
+    "footerFont": "Montserrat, sans-serif",
+    "inquiryFont": "\"Open Sans\", sans-serif",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "fonts": "loaded",
+    "footerFont": "Montserrat, sans-serif",
+    "inquiryFont": "\"Open Sans\", sans-serif",
+    "scrollWidth": 753,
+    "width": 768
+  },
+  {
+    "fonts": "loaded",
+    "footerFont": "Montserrat, sans-serif",
+    "inquiryFont": "\"Open Sans\", sans-serif",
+    "scrollWidth": 1009,
+    "width": 1024
+  },
+  {
+    "fonts": "loaded",
+    "footerFont": "Montserrat, sans-serif",
+    "inquiryFont": "\"Open Sans\", sans-serif",
+    "scrollWidth": 1425,
+    "width": 1440
+  }
+]

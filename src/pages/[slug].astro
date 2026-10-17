@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Photo from '../components/Photo.astro';
+import { products,packaging } from '../data/products';
+import { business } from '../data/site';
+export function getStaticPaths(){return products.map(product=>({params:{slug:product.slug},props:{product}}));}
+const {product:p}=Astro.props;
+const pack=packaging[p.slug];
+---
+<Layout title={`${p.name} - Aladdin Donair Wholesale`} description={p.description||p.paragraphs.join(' ')}>
+ <section class="section container product-section"><a class="back-link" href="/products/">← All products</a><div class="product-detail"><div class="product-copy"><h1>{p.name}</h1><div class="red-rule"></div>{p.paragraphs.filter(Boolean).map(text=><p>{text}</p>)}
+ {pack&&<div class="packaging">{pack.cartons?<table><thead><tr><th scope="col">{pack.label}</th><th scope="col">Carton quantity</th></tr></thead><tbody>{pack.sizes.map((size,i)=><tr><td>{size}</td><td>{pack.cartons?.[i]}</td></tr>)}</tbody></table>:<><h2>{pack.label}</h2><ul class="sizes">{pack.sizes.map(s=><li>{s}</li>)}</ul></>}</div>}
+ <a class="button quote" href={business.officeLink}>Call for quick quote now <span aria-hidden="true">↗</span></a></div>
+ <div class="product-gallery" aria-label={`${p.name} photographs`}>{p.images.map((image,i)=><figure class:list={['gallery-photo',{primary:i===0}]}><a href={image.local} target="_blank" aria-label={`View full photograph: ${image.alt}`}><Photo {...image} src={image.local} eager={i===0}/></a><figcaption>{image.alt}</figcaption></figure>)}</div></div></section>
+ <section class="more-products container"><h2>More Products</h2><nav aria-label="More products">{products.map(item=><a href={`/${item.slug}/`} aria-current={p.slug===item.slug?'page':undefined}>{item.name}</a>)}</nav></section>
+</Layout>
