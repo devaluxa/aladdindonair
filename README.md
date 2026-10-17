@@ -70,7 +70,7 @@ Form browser QA intercepted the POST before it reached the service, fulfilled a 
 - `docs/cloudpanel-vhost.conf` records the template with real directory handling and `error_page 404 /404.html`. Unknown routes return HTTP 404, not a homepage fallback.
 - HTTP and www redirect to `https://aladdindonair.com/`.
 - Cloudflare already pointed apex to the supplied server with www as a proxied CNAME. No DNS, MX, mail-service or Cloudflare security settings were changed.
-- A new site-specific Ed25519 deployment key was generated outside the repository with restrictive local permissions. Fingerprint: `SHA256:EYwRhHeF5CmL8IYgy2PGOSNK8lA/yiUMlHmn6bpH3w0`. Installation in CloudPanel is pending the requested action-time owner confirmation. No existing key or password was replaced. The file-manager deployment did not require that new SSH access.
+- A new site-specific Ed25519 deployment key was generated outside the repository with restrictive local permissions. Fingerprint: `SHA256:EYwRhHeF5CmL8IYgy2PGOSNK8lA/yiUMlHmn6bpH3w0`. After explicit owner confirmation, the public key was saved in CloudPanel. SSH authentication with that key, `IdentitiesOnly=yes`, `BatchMode=yes` and strict host-key checking passed: `whoami` returned `aladdindonair` and `pwd` returned `/home/aladdindonair`. No existing key or password was replaced. The initial file-manager deployment did not require that new SSH access.
 
 Rollback: restore the prior CloudPanel root value (`aladdindonair.com` for the original placeholder, or the previous retained release). Do not delete directories as part of a rollback. Future publication should stage a fresh directory, verify its extracted contents, switch the root, and verify public routes/assets.
 
